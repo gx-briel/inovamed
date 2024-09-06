@@ -1,0 +1,120 @@
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Personalize o cabeçalho */
+header {
+    background-color: #007bff;
+}
+
+/* Estilize os links de navegação */
+.navbar-nav .nav-link {
+    margin-left: 15px;
+}
+
+/* Estilos de rodapé */
+footer {
+    background-color: #343a40;
+}
+
+footer p {
+    margin: 0;
+}
+
+.custom-header {
+    background: linear-gradient(to bottom, #43b4f5, #8ab4dd);
+    color: white; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.custom-navbar{
+    background-color: #8ab4dd;
+}
+
+.custom-header .navbar-brand {
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+h1 {
+    margin: 0; /* Remove espaçamento adicional ao redor do texto */
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white; /* Cor dos links de navegação */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #15ff00; /* Cor dos links ao passar o mouse */
+}
+
+/* Main Container */
+.container {
+    max-width: 1140px; /* Define a largura máxima do container */
+    margin: 0 auto; /* Centraliza o container */
+    padding: 30px; /* Adiciona algum espaçamento interno */
+    background: #fff; /* Fundo branco para o container */
+    border-radius: 10px; /* Cantos arredondados do bloco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve ao redor do bloco */
+    position: relative; /* Necessário para o posicionamento do gradiente */
+    overflow: hidden; /* Garante que o gradiente não exceda os limites do bloco */
+}
+
+/* Gradiente Sutil ao Redor do Bloco */
+.container::before {
+    content: ""; /* Necessário para criar o pseudo-elemento */
+    position: absolute; /* Posiciona o gradiente sobre o bloco */
+    top: -10px; /* Ajusta a posição do gradiente */
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(to bottom right, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.05)); /* Gradiente sutil */
+    border-radius: 15px; /* Ajusta os cantos arredondados para combinar com o bloco */
+    z-index: -1; /* Garante que o gradiente esteja atrás do conteúdo */
+}
+
+/* Títulos */
+h2, h3 {
+    color: #333; /* Cor dos títulos */
+    margin-top: 20px; /* Espaço acima dos títulos */
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.6; /* Aumenta a altura da linha para melhor leitura */
+    margin-bottom: 20px; /* Espaçamento entre parágrafos */
+}
+
+/* Lista */
+ul {
+    padding-left: 20px; /* Adiciona espaçamento à esquerda das listas */
+    margin-bottom: 20px; /* Espaço abaixo da lista */
+}
+
+ul li {
+    margin-bottom: 10px; /* Espaço entre os itens da lista */
+}
+
+/* Lista de grupo */
+ul.list-group {
+    padding-left: 0; /* Remove o espaçamento padrão à esquerda */
+}
+
+ul.list-group .list-group-item {
+    border: 1px solid #ddd; /* Borda leve ao redor dos itens */
+    border-radius: 4px; /* Cantos arredondados dos itens */
+    background-color: #fff; /* Fundo branco dos itens */
+    margin-bottom: 10px; /* Espaçamento entre itens */
+}
+
+ul.list-group .list-group-item:last-child {
+    margin-bottom: 0; /* Remove o espaçamento do último item */
+}
