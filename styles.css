@@ -118,3 +118,9 @@ ul.list-group .list-group-item {
 ul.list-group .list-group-item:last-child {
     margin-bottom: 0; /* Remove o espaçamento do último item */
 }
+
+.list-group-item-action:hover {
+    color: #8c00ff; /* Muda para azul quando o mouse estiver em cima */
+    background-color: #f1f1f1; /* Adiciona um fundo mais claro */
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+}
