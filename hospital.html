@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HM - Sobre</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header class="custom-header d-flex justify-content-center align-items-center py-4">
+        <a class="navbar-brand me-3" href="">
+            <img src="logo.png" alt="Logo" width="200" height="40" class="d-inline-block align-text-top">
+        </a>
+        <h1 class="text-white">INOVAMED</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicos.html">Serviços</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            <h2 class="mb-4">Hospital Municipal de Ji-Paraná/RO</h2> <!-- Espaçamento adicionado -->
+        </div>
+    </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores do carrossel (bolinhas para navegar) -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            
+            <!-- Slides do carrossel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://s2-g1.glbimg.com/6yXSPR0-8VkEAc54wWQZuvj3E8U=/0x0:1000x667/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/b/W/vDjRKWQiGUBjKLq6dmPg/unisp-frame-tv.jpg" class="d-block w-100" alt="Imagem 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Entrada</h5>
+                        <p>Entrada principal do hospital</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://portaljipa.com.br/wp-content/uploads/elementor/thumbs/IMG_20240515_063317035-scaled-e1715817215292-qo7xtcsosd5no6m5jxhutr1vwmpxa0zspft1sjt6zw.jpg" class="d-block w-100" alt="Imagem 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Pronto socorro</h5>
+                        <p>Entrada para atendimentos urgentes</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://jipadigital.com.br/envios/2024/06/04/7809357f962d575679f6ef09e4de38dd.webp" class="d-block w-100" alt="Imagem 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Novas macas</h5>
+                        <p>Equipamento recém adquirido para melhor atender a população</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Controles de navegação (setas) -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </main>
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <p>&copy; 2024 InovaMed. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
