@@ -168,3 +168,9 @@ iframe {
     margin-top: 5px;
 }
 
+
+.minhaclasse{
+    justify-self: center;
+    color: #007bff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
