@@ -57,7 +57,7 @@ h1 {
 
 
 .container {
-    max-width: 1140px;
+    max-width: 1400px;
     margin: 0 auto; 
     padding: 30px;
     background: #fff;
@@ -131,3 +131,40 @@ ul.list-group .list-group-item:last-child {
     padding: 20px;
     border-radius: 10px;
 }
+
+.list-group-item {
+    border-radius: 10px; /* Arredondar os cantos */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa; /* Cor de fundo ao passar o mouse */
+}
+
+.topic {
+    color: #007bff; /* Cor dos títulos */
+    margin-top: 10px; /* Espaçamento superior */
+    margin-right: 10px; /* Espaçamento entre o título e a informação */
+    flex-shrink: 0; /* Impede o encolhimento do título */
+}
+
+.img-fluid {
+    border-radius: 10px; /* Arredondar a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+}
+
+iframe {
+    border-radius: 10px; /* Arredondar o iframe */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para o iframe */
+}
+
+.info-container {
+    display: flex; /* Flexbox para alinhamento */
+    align-items: center; /* Alinha verticalmente no centro */
+}
+
+.sub-info {
+    margin: 0; /* Remove margens para alinhamento perfeito */
+    margin-top: 5px;
+}
+
