@@ -15,61 +15,62 @@
     </style>
 </head>
 <body class="d-flex flex-column min-vh-100">
-    <header class="custom-header d-flex justify-content-center align-items-center py-4">
-        <a class="navbar-brand me-3" href="">
-            <img src="logo.png" alt="Logo" width="200" height="40" class="d-inline-block align-text-top">
-        </a>
-        <h1 class="text-white">INOVAMED</h1>
+    <header
+      class="custom-header d-flex justify-content-center align-items-center py-4"
+    >
     </header>
     <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
-        <div class="container-fluid">
+      <div class="container-fluid">
           <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Início</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre.html">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="servicos.html">Serviços</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="hospital.html">Hospital Municipal</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="samu.html">Samu</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ubs.html">UBS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="upa.html">UPA</a>
-              </li>
-            </ul>
+              <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="hospital.html">Hospital Municipal</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="samu.html">Samu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="ubs.html">UBS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="upa.html">UPA</a>
+                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="servicos.html">Serviços</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="sobre.html">Sobre</a>
+                  </li>
+              </ul>
           </div>
-        </div>
-      </nav>
-    <main class="container my-5">
+      </div>
+  </nav>
+      <main class="container my-5">
         <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-                <h2 class="mb-4">SAMU Ji-Paraná/RO</h2>
-                <p>O Serviço de Atendimento Móvel de Urgência (SAMU) é um sistema de atendimento pré-hospitalar que visa prestar socorro rápido e eficiente em situações de emergência. Entre os principais serviços oferecidos, destacam-se:</p>
+            <div class="col-md-8 text-center p-4 rounded shadow-sm" style="background-color: #f1f1f1; border: 1px solid #dee2e6;">
+                <h2 class="mb-4" style="font-weight: bold; color: #d9534f; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); border-bottom: 3px solid #d9534f; padding-bottom: 8px;">
+                    SAMU Ji-Paraná/RO
+                </h2>
+                <img src='samu.png' 
+                                 class='img-fluid d-block mx-auto mb-3' 
+                                 style='width: 100%; max-width: 700px; height: auto;' 
+                                 alt='Imagem 1'>
+                <p class="lead">O Serviço de Atendimento Móvel de Urgência (SAMU) é um sistema de atendimento pré-hospitalar que visa prestar socorro rápido e eficiente em situações de emergência. Entre os principais serviços oferecidos, destacam-se:</p>
                 <ul class="list-unstyled justificado">
                     <li><strong>Atendimento Pré-Hospitalar:</strong> Intervenções rápidas em casos de urgência e emergência médica.</li>
                     <li><strong>Transferência de Pacientes:</strong> Transporte seguro de pacientes entre unidades de saúde, quando necessário.</li>
@@ -78,10 +79,20 @@
                     <li><strong>Apoio em Eventos Públicos:</strong> Presença em eventos de grande porte para garantir a segurança e saúde da população.</li>
                 </ul>
             </div>
+            <div class="map-container mx-auto d-block" style="width: 67%;">
+              <iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15671.68829156678!2d-61.9190324!3d-10.8935269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93c99b004ac585ed%3A0x7f02e6bcf8e0f477!2sSAMU%20Ji-Paran%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1730414553024!5m2!1spt-BR!2sbr' 
+                      width='100%' 
+                      height='250' 
+                      allowfullscreen='' 
+                      loading='lazy' 
+                      referrerpolicy='no-referrer-when-downgrade'>
+              </iframe>
+          </div>
         </div>
     </main>
+    
     <footer class="bg-dark text-white text-center py-4 mt-auto">
-        <p>&copy; 2024 InovaMed. Todos os direitos reservados.</p>
+        <p>&copy; 2024 InovaMed. </p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -115,7 +115,7 @@ ul.list-group .list-group-item:last-child {
 }
 
 .list-group-item-action:hover {
-    color: #8c00ff; 
+    color: #198754; 
     background-color: #f1f1f1; 
     cursor: pointer;
 }
