@@ -26,7 +26,7 @@ function loadFooter() {
     footerContainer.id = 'footer-container';
     document.body.appendChild(footerContainer);
   }
-  
+
   // Insert footer HTML
   footerContainer.innerHTML = createFooter();
 }

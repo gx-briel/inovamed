@@ -9,16 +9,16 @@ const SCRIPT_PATTERN = /<script>\s*\/\/ Sidebar functionality[\s\S]*?<\/script>/
 // Função para refatorar um arquivo HTML
 function refactorHTMLFile(content) {
   let refactoredContent = content;
-  
+
   // Remove header section
   refactoredContent = refactoredContent.replace(HEADER_PATTERN, '<!-- Header will be loaded here by JavaScript -->');
-  
+
   // Remove footer section
   refactoredContent = refactoredContent.replace(FOOTER_PATTERN, '<!-- Footer will be loaded here by JavaScript -->');
-  
+
   // Remove old JavaScript
   refactoredContent = refactoredContent.replace(SCRIPT_PATTERN, '');
-  
+
   // Add new script imports before closing body tag
   refactoredContent = refactoredContent.replace(
     '</body>',
@@ -29,14 +29,14 @@ function refactorHTMLFile(content) {
   <script src="js/app.js"></script>
 </body>`
   );
-  
+
   return refactoredContent;
 }
 
 // Lista de arquivos para refatorar
 const filesToRefactor = [
   'index.html',
-  'hospital.html', 
+  'hospital.html',
   'samu.html',
   'ubs.html',
   'servicos.html',

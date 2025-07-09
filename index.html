@@ -1,230 +1,231 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>InovaMed - Plataforma de Saúde</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- Header will be loaded here by JavaScript -->
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <!-- Hero Section -->
-      <section class="hero-section">
-        <div class="container">
-          <div class="row align-items-center min-vh-50">
-            <div class="col-lg-6">
-              <div class="hero-content">
-                <h1 class="display-4 fw-bold text-white mb-4">
-                  Conectando você à <span class="text-primary">saúde</span> que precisa
-                </h1>
-                <p class="lead text-white-50 mb-4">
-                  Acesso rápido e direto às informações essenciais dos serviços de saúde da sua região
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>InovaMed - Plataforma de Saúde</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header will be loaded here by JavaScript -->
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-50">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="display-4 fw-bold text-white mb-4">
+                Conectando você à <span class="text-primary">saúde</span> que precisa
+              </h1>
+              <p class="lead text-white-50 mb-4">
+                Acesso rápido e direto às informações essenciais dos serviços de saúde da sua região
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <button class="btn btn-primary btn-lg px-4" id="encontrarUbsBtn">
+                  <i class="fas fa-search me-2"></i>
+                  Encontrar UBS
+                </button>
+                <a href="tel:192" class="btn btn-outline-light btn-lg px-4" title="Ligar para o SAMU - 192">
+                  <i class="fas fa-phone me-2"></i>
+                  Emergência
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image text-center">
+              <i class="fas fa-heartbeat text-primary" style="font-size: 15rem; opacity: 0.1;"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center">
+              <div class="stat-icon">
+                <i class="fas fa-clinic-medical"></i>
+              </div>
+              <h3 class="stat-number">12+</h3>
+              <p class="stat-label">Unidades de Saúde</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center">
+              <div class="stat-icon">
+                <i class="fas fa-user-md"></i>
+              </div>
+              <h3 class="stat-number">24h</h3>
+              <p class="stat-label">Atendimento</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center">
+              <div class="stat-icon">
+                <i class="fas fa-ambulance"></i>
+              </div>
+              <h3 class="stat-number">192</h3>
+              <p class="stat-label">SAMU</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="stat-card text-center">
+              <div class="stat-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3 class="stat-number">100%</h3>
+              <p class="stat-label">Cobertura</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <section class="content-section py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- About Section -->
+          <div class="col-lg-8">
+            <div class="content-card">
+              <div class="card-header">
+                <h2 class="card-title">
+                  <i class="fas fa-heart text-primary me-2"></i>
+                  Nossa Missão
+                </h2>
+              </div>
+              <div class="card-body">
+                <p class="lead mb-4">
+                  Promovemos saúde e bem-estar, oferecendo acesso rápido e direto às informações essenciais para você e
+                  sua família.
                 </p>
-                <div class="d-flex flex-wrap gap-3">
-                  <button class="btn btn-primary btn-lg px-4" id="encontrarUbsBtn">
-                    <i class="fas fa-search me-2"></i>
-                    Encontrar UBS
-                  </button>
-                  <a href="tel:192" class="btn btn-outline-light btn-lg px-4" title="Ligar para o SAMU - 192">
-                    <i class="fas fa-phone me-2"></i>
-                    Emergência
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="hero-image text-center">
-                <i class="fas fa-heartbeat text-primary" style="font-size: 15rem; opacity: 0.1;"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Stats Section -->
-      <section class="stats-section py-5">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card text-center">
-                <div class="stat-icon">
-                  <i class="fas fa-clinic-medical"></i>
+                <div class="row g-4 mb-4">
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <div class="feature-icon">
+                        <i class="fas fa-check-circle text-success"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h5 class="fw-semibold">Atendimento de Qualidade</h5>
+                        <p class="text-muted">Serviços médicos especializados e humanizados</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature-item">
+                      <div class="feature-icon">
+                        <i class="fas fa-users text-info"></i>
+                      </div>
+                      <div class="feature-content">
+                        <h5 class="fw-semibold">Saúde Comunitária</h5>
+                        <p class="text-muted">Fortalecimento dos laços com a comunidade</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <h3 class="stat-number">12+</h3>
-                <p class="stat-label">Unidades de Saúde</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card text-center">
-                <div class="stat-icon">
-                  <i class="fas fa-user-md"></i>
-                </div>
-                <h3 class="stat-number">24h</h3>
-                <p class="stat-label">Atendimento</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card text-center">
-                <div class="stat-icon">
-                  <i class="fas fa-ambulance"></i>
-                </div>
-                <h3 class="stat-number">192</h3>
-                <p class="stat-label">SAMU</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-              <div class="stat-card text-center">
-                <div class="stat-icon">
-                  <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 class="stat-number">100%</h3>
-                <p class="stat-label">Cobertura</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!-- Main Content Area -->
-      <section class="content-section py-5">
-        <div class="container">
-          <div class="row g-4">
-            <!-- About Section -->
-            <div class="col-lg-8">
-              <div class="content-card">
-                <div class="card-header">
-                  <h2 class="card-title">
-                    <i class="fas fa-heart text-primary me-2"></i>
-                    Nossa Missão
-                  </h2>
-                </div>
-                <div class="card-body">
-                  <p class="lead mb-4">
-                    Promovemos saúde e bem-estar, oferecendo acesso rápido e direto às informações essenciais para você e sua família.
+                <div class="commitment-section p-4 bg-light rounded-3 mb-4">
+                  <h4 class="text-primary mb-3">
+                    <i class="fas fa-handshake me-2"></i>
+                    Nosso Compromisso
+                  </h4>
+                  <p class="mb-0">
+                    Fornecer informações precisas, atualizadas e confiáveis para orientar suas decisões sobre saúde e
+                    bem-estar.
                   </p>
-                  
-                  <div class="row g-4 mb-4">
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="fas fa-check-circle text-success"></i>
-                        </div>
-                        <div class="feature-content">
-                          <h5 class="fw-semibold">Atendimento de Qualidade</h5>
-                          <p class="text-muted">Serviços médicos especializados e humanizados</p>
-                        </div>
+                </div>
+
+                <div class="explore-section">
+                  <h4 class="text-primary mb-3">
+                    <i class="fas fa-compass me-2"></i>
+                    Explore nossos recursos
+                  </h4>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="resource-item">
+                        <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                        Informações detalhadas sobre postos de saúde na sua região
                       </div>
                     </div>
-                    <div class="col-md-6">
-                      <div class="feature-item">
-                        <div class="feature-icon">
-                          <i class="fas fa-users text-info"></i>
-                        </div>
-                        <div class="feature-content">
-                          <h5 class="fw-semibold">Saúde Comunitária</h5>
-                          <p class="text-muted">Fortalecimento dos laços com a comunidade</p>
-                        </div>
+                    <div class="col-12">
+                      <div class="resource-item">
+                        <i class="fas fa-shield-virus text-success me-2"></i>
+                        Recursos para cuidado preventivo e tratamento
                       </div>
                     </div>
-                  </div>
-
-                  <div class="commitment-section p-4 bg-light rounded-3 mb-4">
-                    <h4 class="text-primary mb-3">
-                      <i class="fas fa-handshake me-2"></i>
-                      Nosso Compromisso
-                    </h4>
-                    <p class="mb-0">
-                      Fornecer informações precisas, atualizadas e confiáveis para orientar suas decisões sobre saúde e bem-estar.
-                    </p>
-                  </div>
-
-                  <div class="explore-section">
-                    <h4 class="text-primary mb-3">
-                      <i class="fas fa-compass me-2"></i>
-                      Explore nossos recursos
-                    </h4>
-                    <div class="row g-3">
-                      <div class="col-12">
-                        <div class="resource-item">
-                          <i class="fas fa-map-marker-alt text-primary me-2"></i>
-                          Informações detalhadas sobre postos de saúde na sua região
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="resource-item">
-                          <i class="fas fa-shield-virus text-success me-2"></i>
-                          Recursos para cuidado preventivo e tratamento
-                        </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="resource-item">
-                          <i class="fas fa-newspaper text-info me-2"></i>
-                          Notícias e atualizações em saúde
-                        </div>
+                    <div class="col-12">
+                      <div class="resource-item">
+                        <i class="fas fa-newspaper text-info me-2"></i>
+                        Notícias e atualizações em saúde
                       </div>
                     </div>
                   </div>
+                </div>
 
-                  <div class="cta-section text-center mt-4 p-4 bg-primary text-white rounded-3">
-                    <h4 class="mb-2">Esteja Informado, Esteja Saudável!</h4>
-                    <p class="mb-0 opacity-75">Sua saúde é nossa prioridade</p>
-                  </div>
+                <div class="cta-section text-center mt-4 p-4 bg-primary text-white rounded-3">
+                  <h4 class="mb-2">Esteja Informado, Esteja Saudável!</h4>
+                  <p class="mb-0 opacity-75">Sua saúde é nossa prioridade</p>
                 </div>
               </div>
             </div>
-            <!-- UBS Selector -->
-            <div class="col-lg-4" id="ubs-selector">
-              <div class="ubs-selector-card">
-                <div class="card-header text-center">
-                  <h3 class="card-title text-white">
-                    <i class="fas fa-map-marked-alt me-2"></i>
-                    Selecione a UBS
-                  </h3>
+          </div>
+          <!-- UBS Selector -->
+          <div class="col-lg-4" id="ubs-selector">
+            <div class="ubs-selector-card">
+              <div class="card-header text-center">
+                <h3 class="card-title text-white">
+                  <i class="fas fa-map-marked-alt me-2"></i>
+                  Selecione a UBS
+                </h3>
+              </div>
+              <div class="card-body">
+                <!-- Search Box -->
+                <div class="search-box mb-4">
+                  <div class="input-group">
+                    <span class="input-group-text">
+                      <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Buscar UBS..." id="ubsSearch">
+                  </div>
                 </div>
-                <div class="card-body">
-                  <!-- Search Box -->
-                  <div class="search-box mb-4">
-                    <div class="input-group">
-                      <span class="input-group-text">
-                        <i class="fas fa-search"></i>
-                      </span>
-                      <input type="text" class="form-control" placeholder="Buscar UBS..." id="ubsSearch">
+
+                <!-- District Tabs -->
+                <div class="district-tabs mb-4">
+                  <nav>
+                    <div class="nav nav-pills justify-content-center" id="district-tabs" role="tablist">
+                      <button class="nav-link active" id="district1-tab" data-bs-toggle="pill"
+                        data-bs-target="#district1" type="button" role="tab">
+                        1º Distrito
+                      </button>
+                      <button class="nav-link" id="district2-tab" data-bs-toggle="pill" data-bs-target="#district2"
+                        type="button" role="tab">
+                        2º Distrito
+                      </button>
                     </div>
-                  </div>
+                  </nav>
+                </div>
 
-                  <!-- District Tabs -->
-                  <div class="district-tabs mb-4">
-                    <nav>
-                      <div class="nav nav-pills justify-content-center" id="district-tabs" role="tablist">
-                        <button class="nav-link active" id="district1-tab" data-bs-toggle="pill" data-bs-target="#district1" type="button" role="tab">
-                          1º Distrito
-                        </button>
-                        <button class="nav-link" id="district2-tab" data-bs-toggle="pill" data-bs-target="#district2" type="button" role="tab">
-                          2º Distrito
-                        </button>
-                      </div>
-                    </nav>
-                  </div>
-
-                  <!-- District Content -->
-                  <div class="tab-content" id="district-content">
-                    <!-- First District -->
-                    <div class="tab-pane fade show active" id="district1" role="tabpanel">
-                      <div class="ubs-list">
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS DOIS DE ABRIL" data-content="
+                <!-- District Content -->
+                <div class="tab-content" id="district-content">
+                  <!-- First District -->
+                  <div class="tab-pane fade show active" id="district1" role="tabpanel">
+                    <div class="ubs-list">
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS DOIS DE ABRIL" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='da.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS Dois de Abril'>
@@ -281,22 +282,23 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon">
-                            <i class="fas fa-clinic-medical"></i>
-                          </div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS Dois de Abril</h6>
-                            <p class="ubs-status">
-                              <i class="fas fa-circle text-success me-1"></i>
-                              Aberto 24h
-                            </p>
-                          </div>
+                        <div class="ubs-icon">
+                          <i class="fas fa-clinic-medical"></i>
                         </div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS Dois de Abril</h6>
+                          <p class="ubs-status">
+                            <i class="fas fa-circle text-success me-1"></i>
+                            Aberto 24h
+                          </p>
+                        </div>
+                      </div>
 
-                        <!-- Repeat similar structure for other UBS in District 1 -->
-                        
-                        <!-- UBS Dom Bosco -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS DOM BOSCO" data-content="
+                      <!-- Repeat similar structure for other UBS in District 1 -->
+
+                      <!-- UBS Dom Bosco -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS DOM BOSCO" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='db.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS Dom Bosco'>
@@ -345,15 +347,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS Dom Bosco</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS Dom Bosco</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS KM5 -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS KM5" data-content="
+                      <!-- UBS KM5 -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS KM5"
+                        data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='km5.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS KM5'>
@@ -402,15 +405,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS KM5</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS KM5</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS São Bernardo -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS SÃO BERNARDO" data-content="
+                      <!-- UBS São Bernardo -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS SÃO BERNARDO" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='sb.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS São Bernardo'>
@@ -459,20 +463,21 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS São Bernardo</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS São Bernardo</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
                       </div>
                     </div>
+                  </div>
 
-                    <!-- Second District -->
-                    <div class="tab-pane fade" id="district2" role="tabpanel">
-                      <div class="ubs-list">
-                        <!-- UBS BNH -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS BNH" data-content="
+                  <!-- Second District -->
+                  <div class="tab-pane fade" id="district2" role="tabpanel">
+                    <div class="ubs-list">
+                      <!-- UBS BNH -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS BNH"
+                        data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='BNH.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS BNH'>
@@ -521,17 +526,18 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS BNH</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS BNH</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- Continue with remaining UBS... -->
-                        
-                        <!-- UBS Juscelino Cardoso -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS JUSCELINO CARDOSO" data-content="
+                      <!-- Continue with remaining UBS... -->
+
+                      <!-- UBS Juscelino Cardoso -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS JUSCELINO CARDOSO" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='jc.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS Juscelino Cardoso'>
@@ -580,15 +586,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS Juscelino Cardoso</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS Juscelino Cardoso</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS L1 Maringá -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="CENTRO DE SAÚDE L-1 MARINGÁ JI-PARANÁ" data-content="
+                      <!-- UBS L1 Maringá -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="CENTRO DE SAÚDE L-1 MARINGÁ JI-PARANÁ" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='l1.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='Centro de Saúde L1 Maringá'>
@@ -637,15 +644,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS L1 Maringá</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS L1 Maringá</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS Nova Brasília -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS NOVA BRASÍLIA" data-content="
+                      <!-- UBS Nova Brasília -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS NOVA BRASÍLIA" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='nb.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS Nova Brasília'>
@@ -694,15 +702,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS Nova Brasília</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS Nova Brasília</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS Primavera -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS PRIMAVERA" data-content="
+                      <!-- UBS Primavera -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS PRIMAVERA" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='prima.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS Primavera'>
@@ -751,15 +760,16 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS Primavera</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS Primavera</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
+                      </div>
 
-                        <!-- UBS São Francisco -->
-                        <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS SÃO FRANCISCO" data-content="
+                      <!-- UBS São Francisco -->
+                      <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
+                        data-title="UBS SÃO FRANCISCO" data-content="
                         <div class='modal-content-custom'>
                           <div class='text-center mb-4'>
                             <img src='sf.png' class='img-fluid rounded-3 shadow' style='max-width: 100%; height: 200px; object-fit: cover;' alt='UBS São Francisco'>
@@ -808,11 +818,10 @@
                             </div>
                           </div>
                         </div>">
-                          <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
-                          <div class="ubs-info">
-                            <h6 class="ubs-name">UBS São Francisco</h6>
-                            <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
-                          </div>
+                        <div class="ubs-icon"><i class="fas fa-clinic-medical"></i></div>
+                        <div class="ubs-info">
+                          <h6 class="ubs-name">UBS São Francisco</h6>
+                          <p class="ubs-status"><i class="fas fa-circle text-success me-1"></i>Aberto</p>
                         </div>
                       </div>
                     </div>
@@ -822,238 +831,239 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <!-- Modal -->
-    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header bg-primary text-white">
-            <h5 class="modal-title d-flex align-items-center" id="infoModalLabel">
-              <i class="fas fa-clinic-medical me-2"></i>
-              <span>Informações da Unidade</span>
-            </h5>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body p-0"></div>
-          <div class="modal-footer bg-light">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
-              <i class="fas fa-times me-1"></i>
-              Fechar
-            </button>
-          </div>
+  <!-- Modal -->
+  <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title d-flex align-items-center" id="infoModalLabel">
+            <i class="fas fa-clinic-medical me-2"></i>
+            <span>Informações da Unidade</span>
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0"></div>
+        <div class="modal-footer bg-light">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            <i class="fas fa-times me-1"></i>
+            Fechar
+          </button>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 text-md-start text-center">
-            <p class="mb-0">&copy; 2024 InovaMed. Todos os direitos reservados.</p>
-          </div>
-          <div class="col-md-6 text-md-end text-center">
-            <p class="mb-0">Conectando você à saúde que precisa</p>
-          </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-md-start text-center">
+          <p class="mb-0">&copy; 2024 InovaMed. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-md-end text-center">
+          <p class="mb-0">Conectando você à saúde que precisa</p>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!-- Scripts -->
+  <!-- Scripts -->
   <script src="components/header.js"></script>
   <script src="components/footer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="components/header.js"></script>
-    <script src="components/footer.js"></script>
-    <script>
-      // Modal functionality
-      const infoModal = document.getElementById("infoModal");
-      if (infoModal) {
-        infoModal.addEventListener("show.bs.modal", function (event) {
-          const button = event.relatedTarget;
-          const title = button.getAttribute("data-title");
-          const content = button.getAttribute("data-content");
-          const modalBody = infoModal.querySelector(".modal-body");
-          const modalTitle = infoModal.querySelector("#infoModalLabel span");
-          
-          if (modalTitle) modalTitle.textContent = title;
-          if (modalBody) modalBody.innerHTML = content;
-        });
-      }
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  <script>
+    // Modal functionality
+    const infoModal = document.getElementById("infoModal");
+    if (infoModal) {
+      infoModal.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+        const title = button.getAttribute("data-title");
+        const content = button.getAttribute("data-content");
+        const modalBody = infoModal.querySelector(".modal-body");
+        const modalTitle = infoModal.querySelector("#infoModalLabel span");
 
-      // Sidebar functionality
-      const sidebar = document.getElementById('sidebar');
-      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-      const sidebarToggle = document.getElementById('sidebarToggle');
-      const sidebarOverlay = document.getElementById('sidebarOverlay');
+        if (modalTitle) modalTitle.textContent = title;
+        if (modalBody) modalBody.innerHTML = content;
+      });
+    }
 
-      // Toggle sidebar on mobile
-      if (mobileMenuToggle) {
-        mobileMenuToggle.addEventListener('click', function() {
-          sidebar.classList.add('show');
-          sidebarOverlay.classList.add('show');
-        });
-      }
+    // Sidebar functionality
+    const sidebar = document.getElementById('sidebar');
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const sidebarToggle = document.getElementById('sidebarToggle');
+    const sidebarOverlay = document.getElementById('sidebarOverlay');
 
-      // Close sidebar on mobile
-      if (sidebarToggle) {
-        sidebarToggle.addEventListener('click', function() {
-          sidebar.classList.remove('show');
-          sidebarOverlay.classList.remove('show');
-        });
-      }
+    // Toggle sidebar on mobile
+    if (mobileMenuToggle) {
+      mobileMenuToggle.addEventListener('click', function () {
+        sidebar.classList.add('show');
+        sidebarOverlay.classList.add('show');
+      });
+    }
 
-      // Close sidebar when clicking overlay
-      if (sidebarOverlay) {
-        sidebarOverlay.addEventListener('click', function() {
-          sidebar.classList.remove('show');
-          sidebarOverlay.classList.remove('show');
-        });
-      }
+    // Close sidebar on mobile
+    if (sidebarToggle) {
+      sidebarToggle.addEventListener('click', function () {
+        sidebar.classList.remove('show');
+        sidebarOverlay.classList.remove('show');
+      });
+    }
 
-      // UBS Search functionality with smart district switching
-      const ubsSearch = document.getElementById('ubsSearch');
-      if (ubsSearch) {
-        ubsSearch.addEventListener('input', function() {
-          const searchTerm = this.value.toLowerCase().trim();
-          
-          // Get all UBS items from both districts
-          const allUbsItems = document.querySelectorAll('.ubs-item');
-          const district1Tab = document.getElementById('district1-tab');
-          const district2Tab = document.getElementById('district2-tab');
-          const district1Content = document.getElementById('district1');
-          const district2Content = document.getElementById('district2');
-          
-          if (searchTerm === '') {
-            // Show all UBS when search is empty
-            allUbsItems.forEach(item => {
-              item.style.display = 'flex';
-            });
-            return;
-          }
-          
-          let foundInDistrict1 = false;
-          let foundInDistrict2 = false;
-          let firstMatch = null;
-          
-          // Check each UBS
+    // Close sidebar when clicking overlay
+    if (sidebarOverlay) {
+      sidebarOverlay.addEventListener('click', function () {
+        sidebar.classList.remove('show');
+        sidebarOverlay.classList.remove('show');
+      });
+    }
+
+    // UBS Search functionality with smart district switching
+    const ubsSearch = document.getElementById('ubsSearch');
+    if (ubsSearch) {
+      ubsSearch.addEventListener('input', function () {
+        const searchTerm = this.value.toLowerCase().trim();
+
+        // Get all UBS items from both districts
+        const allUbsItems = document.querySelectorAll('.ubs-item');
+        const district1Tab = document.getElementById('district1-tab');
+        const district2Tab = document.getElementById('district2-tab');
+        const district1Content = document.getElementById('district1');
+        const district2Content = document.getElementById('district2');
+
+        if (searchTerm === '') {
+          // Show all UBS when search is empty
           allUbsItems.forEach(item => {
-            const ubsName = item.querySelector('.ubs-name');
-            const isDistrict1 = item.closest('#district1') !== null;
-            
-            if (ubsName && ubsName.textContent.toLowerCase().includes(searchTerm)) {
-              item.style.display = 'flex';
-              
-              if (isDistrict1) {
-                foundInDistrict1 = true;
-              } else {
-                foundInDistrict2 = true;
-              }
-              
-              // Store first match for auto-switching
-              if (!firstMatch) {
-                firstMatch = { item, isDistrict1 };
-              }
+            item.style.display = 'flex';
+          });
+          return;
+        }
+
+        let foundInDistrict1 = false;
+        let foundInDistrict2 = false;
+        let firstMatch = null;
+
+        // Check each UBS
+        allUbsItems.forEach(item => {
+          const ubsName = item.querySelector('.ubs-name');
+          const isDistrict1 = item.closest('#district1') !== null;
+
+          if (ubsName && ubsName.textContent.toLowerCase().includes(searchTerm)) {
+            item.style.display = 'flex';
+
+            if (isDistrict1) {
+              foundInDistrict1 = true;
             } else {
-              item.style.display = 'none';
+              foundInDistrict2 = true;
             }
-          });
-          
-          // Auto-switch to the district with matches
-          if (firstMatch) {
-            if (firstMatch.isDistrict1 && !district1Tab.classList.contains('active')) {
-              // Switch to District 1
-              district1Tab.click();
-            } else if (!firstMatch.isDistrict1 && !district2Tab.classList.contains('active')) {
-              // Switch to District 2
-              district2Tab.click();
+
+            // Store first match for auto-switching
+            if (!firstMatch) {
+              firstMatch = { item, isDistrict1 };
             }
+          } else {
+            item.style.display = 'none';
           }
         });
-        
-        // Clear search when switching tabs manually
-        const districtTabs = document.querySelectorAll('#district-tabs button');
-        districtTabs.forEach(tab => {
-          tab.addEventListener('click', function() {
-            // Small delay to ensure tab switch completes
-            setTimeout(() => {
-              if (ubsSearch.value.trim() === '') {
-                const allUbsItems = document.querySelectorAll('.ubs-item');
-                allUbsItems.forEach(item => {
-                  item.style.display = 'flex';
-                });
-              }
-            }, 100);
+
+        // Auto-switch to the district with matches
+        if (firstMatch) {
+          if (firstMatch.isDistrict1 && !district1Tab.classList.contains('active')) {
+            // Switch to District 1
+            district1Tab.click();
+          } else if (!firstMatch.isDistrict1 && !district2Tab.classList.contains('active')) {
+            // Switch to District 2
+            district2Tab.click();
+          }
+        }
+      });
+
+      // Clear search when switching tabs manually
+      const districtTabs = document.querySelectorAll('#district-tabs button');
+      districtTabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          // Small delay to ensure tab switch completes
+          setTimeout(() => {
+            if (ubsSearch.value.trim() === '') {
+              const allUbsItems = document.querySelectorAll('.ubs-item');
+              allUbsItems.forEach(item => {
+                item.style.display = 'flex';
+              });
+            }
+          }, 100);
+        });
+      });
+    }
+
+    // Encontrar UBS button functionality
+    const encontrarUbsBtn = document.getElementById('encontrarUbsBtn');
+    if (encontrarUbsBtn) {
+      encontrarUbsBtn.addEventListener('click', function () {
+        const ubsSelector = document.getElementById('ubs-selector');
+        if (ubsSelector) {
+          ubsSelector.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
           });
-        });
-      }
 
-      // Encontrar UBS button functionality
-      const encontrarUbsBtn = document.getElementById('encontrarUbsBtn');
-      if (encontrarUbsBtn) {
-        encontrarUbsBtn.addEventListener('click', function() {
-          const ubsSelector = document.getElementById('ubs-selector');
-          if (ubsSelector) {
-            ubsSelector.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-            
-            // Opcional: focar no campo de busca após o scroll
-            setTimeout(() => {
-              const searchInput = document.getElementById('ubsSearch');
-              if (searchInput) {
-                searchInput.focus();
-              }
-            }, 800);
-          }
-        });
-      }
+          // Opcional: focar no campo de busca após o scroll
+          setTimeout(() => {
+            const searchInput = document.getElementById('ubsSearch');
+            if (searchInput) {
+              searchInput.focus();
+            }
+          }, 800);
+        }
+      });
+    }
 
-      // Smooth scrolling for navigation links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          e.preventDefault();
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            target.scrollIntoView({
-              behavior: 'smooth',
-              block: 'start'
-            });
-          }
-        });
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    // Add active class to navigation based on scroll position
+    window.addEventListener('scroll', function () {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.sidebar .nav-link');
+
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 200)) {
+          current = section.getAttribute('id');
+        }
       });
 
-      // Add active class to navigation based on scroll position
-      window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.sidebar .nav-link');
-        
-        let current = '';
-        sections.forEach(section => {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.clientHeight;
-          if (scrollY >= (sectionTop - 200)) {
-            current = section.getAttribute('id');
-          }
-        });
-
-        navLinks.forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${current}`) {
-            link.classList.add('active');
-          }
-        });
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
       });
+    });
 
-      // Initialize tooltips if needed
-      const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-      const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-        return new bootstrap.Tooltip(tooltipTriggerEl);
-      });
-    </script>
-  </body>
+    // Initialize tooltips if needed
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  </script>
+</body>
+
 </html>
-
