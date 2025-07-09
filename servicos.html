@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>InovaMed - Serviços</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="d-flex align-items-center">
+          <i class="fas fa-heartbeat text-primary me-2 fs-4"></i>
+          <h5 class="mb-0 text-white fw-bold">InovaMed</h5>
+        </div>
+        <button class="btn btn-link text-white d-md-none" id="sidebarToggle">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="sidebar-content">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home me-2"></i>
+              <span>Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hospital.html">
+              <i class="fas fa-hospital me-2"></i>
+              <span>Hospital Municipal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="samu.html">
+              <i class="fas fa-ambulance me-2"></i>
+              <span>SAMU</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubs.html">
+              <i class="fas fa-clinic-medical me-2"></i>
+              <span>UBS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upa.html">
+              <i class="fas fa-user-md me-2"></i>
+              <span>UPA</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="servicos.html">
+              <i class="fas fa-stethoscope me-2"></i>
+              <span>Serviços</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre.html">
+              <i class="fas fa-info-circle me-2"></i>
+              <span>Sobre</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Overlay for mobile -->
+    <div class="sidebar-overlay d-md-none" id="sidebarOverlay"></div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="btn btn-primary mobile-menu-btn d-md-none" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center min-vh-50">
+            <div class="col-lg-6">
+              <div class="hero-content">
+                <h1 class="display-4 fw-bold text-white mb-4">
+                  <i class="fas fa-stethoscope me-3"></i>
+                  Nossos <span class="text-primary">Serviços</span>
+                </h1>
+                <p class="lead text-white-50 mb-4">
+                  Informações completas sobre os serviços de saúde disponíveis em Ji-Paraná
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <button class="btn btn-primary btn-lg px-4" onclick="document.getElementById('servicos').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-list me-2"></i>
+                    Ver Serviços
+                  </button>
+                  <a href="ubs.html" class="btn btn-outline-light btn-lg px-4">
+                    <i class="fas fa-search me-2"></i>
+                    Encontrar UBS
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-image text-center">
+                <i class="fas fa-stethoscope text-primary" style="font-size: 15rem; opacity: 0.1;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-hospital"></i>
+                </div>
+                <h3 class="stat-number">15+</h3>
+                <p class="stat-label">Serviços Disponíveis</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <h3 class="stat-number">24/7</h3>
+                <p class="stat-label">Atendimento de Emergência</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="stat-number">100%</h3>
+                <p class="stat-label">Cobertura da População</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="stat-number">SUS</h3>
+                <p class="stat-label">Gratuito</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Overview Section -->
+      <section class="content-section py-5" id="sobre">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="content-card">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    <i class="fas fa-info-circle text-primary me-2"></i>
+                    O Que Oferecemos
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <p class="lead mb-4">
+                    Nosso site fornece informações detalhadas sobre os postos de saúde de Ji-Paraná, facilitando o acesso aos serviços essenciais para você e sua família.
+                  </p>
+                  
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-clock text-success"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Horários de Atendimento</h5>
+                          <p class="text-muted">Veja os dias e horários em que cada posto está aberto e evite contratempos.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-phone text-info"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Informações de Contato</h5>
+                          <p class="text-muted">Encontre números de telefone e outros meios de comunicação para agendar consultas.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-stethoscope text-warning"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Serviços Disponíveis</h5>
+                          <p class="text-muted">Descubra quais serviços e procedimentos estão oferecidos, como vacinas e exames.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-map-marker-alt text-danger"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Localização</h5>
+                          <p class="text-muted">Mapas interativos para encontrar facilmente a unidade mais próxima.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="content-card">
+                <div class="card-header">
+                  <h3 class="card-title text-white">
+                    <i class="fas fa-question-circle me-2"></i>
+                    Precisa de Ajuda?
+                  </h3>
+                </div>
+                <div class="card-body">
+                  <p class="mb-3">Não encontrou o que procura? Entre em contato conosco ou use nossos recursos:</p>
+                  <div class="d-grid gap-2">
+                    <a href="ubs.html" class="btn btn-primary">
+                      <i class="fas fa-search me-2"></i>
+                      Buscar UBS
+                    </a>
+                    <a href="tel:192" class="btn btn-danger">
+                      <i class="fas fa-phone me-2"></i>
+                      Emergência - 192
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detailed Services Section -->
+      <section class="services-section py-5 bg-light" id="servicos">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">
+              <i class="fas fa-list text-primary me-2"></i>
+              Serviços Detalhados
+            </h2>
+            <p class="lead text-muted">Conheça todos os serviços disponíveis nas unidades de saúde</p>
+          </div>
+          
+          <div class="row g-4">
+            <!-- UBS Services -->
+            <div class="col-lg-4">
+              <div class="service-category-card h-100">
+                <div class="service-category-header">
+                  <i class="fas fa-clinic-medical text-primary"></i>
+                  <h4>UBS - Unidades Básicas</h4>
+                </div>
+                <div class="service-category-body">
+                  <ul class="service-list">
+                    <li><i class="fas fa-check text-success me-2"></i>Consulta Médica</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Consulta de Enfermagem</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Curativos</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Retirada de Pontos</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Troca de Sonda</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Teste Rápido</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Inserção de DIU</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Coleta de Preventivo</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Teste do Pezinho</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Administração de Medicamentos</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Vacinas</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Acompanhamento Domiciliar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- UPA Services -->
+            <div class="col-lg-4">
+              <div class="service-category-card h-100">
+                <div class="service-category-header">
+                  <i class="fas fa-user-md text-warning"></i>
+                  <h4>UPA - Pronto Atendimento</h4>
+                </div>
+                <div class="service-category-body">
+                  <ul class="service-list">
+                    <li><i class="fas fa-check text-success me-2"></i>Atendimento 24 horas</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Triagem de Urgência</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Exames Rápidos</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Raio-X</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Eletrocardiograma</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Exames Laboratoriais</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Suturas</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Imobilizações</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Medicação de Urgência</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Observação Clínica</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Encaminhamentos</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Hospital Services -->
+            <div class="col-lg-4">
+              <div class="service-category-card h-100">
+                <div class="service-category-header">
+                  <i class="fas fa-hospital text-danger"></i>
+                  <h4>Hospital Municipal</h4>
+                </div>
+                <div class="service-category-body">
+                  <ul class="service-list">
+                    <li><i class="fas fa-check text-success me-2"></i>Emergências</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Internações</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Cirurgias</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Centro Cirúrgico</li>
+                    <li><i class="fas fa-check text-success me-2"></i>UTI</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Maternidade</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Pediatria</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Exames Especializados</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Tomografia</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Ultrassom</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Laboratório 24h</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Emergency Section -->
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="emergency-card">
+                <div class="emergency-header">
+                  <i class="fas fa-ambulance text-danger"></i>
+                  <h3>SAMU - Atendimento de Emergência</h3>
+                </div>
+                <div class="emergency-body">
+                  <div class="row align-items-center">
+                    <div class="col-lg-8">
+                      <p class="mb-3">
+                        <strong>Serviço de Atendimento Móvel de Urgência</strong> - Atendimento pré-hospitalar e transporte de pacientes em situações de emergência.
+                      </p>
+                      <div class="row g-3">
+                        <div class="col-md-6">
+                          <ul class="service-list mb-0">
+                            <li><i class="fas fa-check text-success me-2"></i>Atendimento pré-hospitalar</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Transporte de emergência</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Suporte básico de vida</li>
+                          </ul>
+                        </div>
+                        <div class="col-md-6">
+                          <ul class="service-list mb-0">
+                            <li><i class="fas fa-check text-success me-2"></i>Suporte avançado de vida</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Atendimento domiciliar</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Central de regulação</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                      <div class="emergency-contact">
+                        <h2 class="text-danger fw-bold mb-2">192</h2>
+                        <p class="mb-0">Ligue para emergências</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-md-start text-center">
+            <p class="mb-0">&copy; 2024 InovaMed. Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <p class="mb-0">Conectando você à saúde que precisa</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Sidebar functionality
+      const sidebar = document.getElementById('sidebar');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      
+      function toggleSidebar() {
+        sidebar.classList.toggle('show');
+        sidebarOverlay.classList.toggle('show');
+        document.body.classList.toggle('sidebar-open');
+      }
+      
+      if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', toggleSidebar);
+      }
+      
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', function() {
+          sidebar.classList.remove('show');
+          sidebarOverlay.classList.remove('show');
+          document.body.classList.remove('sidebar-open');
+        });
+      }
+      
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', function() {
+          sidebar.classList.remove('show');
+          sidebarOverlay.classList.remove('show');
+          document.body.classList.remove('sidebar-open');
+        });
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>InovaMed - Sobre</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar Navigation -->
+    <nav id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <div class="d-flex align-items-center">
+          <i class="fas fa-heartbeat text-primary me-2 fs-4"></i>
+          <h5 class="mb-0 text-white fw-bold">InovaMed</h5>
+        </div>
+        <button class="btn btn-link text-white d-md-none" id="sidebarToggle">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      
+      <div class="sidebar-content">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home me-2"></i>
+              <span>Início</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="hospital.html">
+              <i class="fas fa-hospital me-2"></i>
+              <span>Hospital Municipal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="samu.html">
+              <i class="fas fa-ambulance me-2"></i>
+              <span>SAMU</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ubs.html">
+              <i class="fas fa-clinic-medical me-2"></i>
+              <span>UBS</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="upa.html">
+              <i class="fas fa-user-md me-2"></i>
+              <span>UPA</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="servicos.html">
+              <i class="fas fa-stethoscope me-2"></i>
+              <span>Serviços</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sobre.html">
+              <i class="fas fa-info-circle me-2"></i>
+              <span>Sobre</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Overlay for mobile -->
+    <div class="sidebar-overlay d-md-none" id="sidebarOverlay"></div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="btn btn-primary mobile-menu-btn d-md-none" id="mobileMenuToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="row align-items-center min-vh-50">
+            <div class="col-lg-6">
+              <div class="hero-content">
+                <h1 class="display-4 fw-bold text-white mb-4">
+                  <i class="fas fa-info-circle me-3"></i>
+                  Sobre o <span class="text-primary">Projeto</span>
+                </h1>
+                <p class="lead text-white-50 mb-4">
+                  Conhecendo a equipe e a missão por trás da plataforma InovaMed
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <button class="btn btn-primary btn-lg px-4" onclick="document.getElementById('projeto').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-users me-2"></i>
+                    Nossa Equipe
+                  </button>
+                  <button class="btn btn-outline-light btn-lg px-4" onclick="document.getElementById('agradecimentos').scrollIntoView({behavior: 'smooth'})">
+                    <i class="fas fa-heart me-2"></i>
+                    Agradecimentos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-image text-center">
+                <i class="fas fa-users text-primary" style="font-size: 15rem; opacity: 0.1;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats-section py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3 class="stat-number">2024</h3>
+                <p class="stat-label">Ano do Projeto</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <h3 class="stat-number">Alunos</h3>
+                <p class="stat-label">Faculdade São Lucas</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <h3 class="stat-number">100%</h3>
+                <p class="stat-label">Dedicação</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stat-card text-center">
+                <div class="stat-icon">
+                  <i class="fas fa-hands-helping"></i>
+                </div>
+                <h3 class="stat-number">Grátis</h3>
+                <p class="stat-label">Para Comunidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+      <section class="content-section py-5" id="projeto">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="content-card">
+                <div class="card-header">
+                  <h2 class="card-title">
+                    <i class="fas fa-lightbulb text-primary me-2"></i>
+                    Sobre o Projeto
+                  </h2>
+                </div>
+                <div class="card-body">
+                  <p class="lead mb-4">
+                    Nós, alunos da Faculdade São Lucas, criamos este site com o propósito de facilitar o acesso das pessoas às informações essenciais sobre os postos de saúde em seus bairros.
+                  </p>
+                  
+                  <div class="row g-4 mb-4">
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-target text-success"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Nosso Objetivo</h5>
+                          <p class="text-muted">Melhorar a comunicação entre os serviços de saúde e a comunidade</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="feature-item">
+                        <div class="feature-icon">
+                          <i class="fas fa-shield-alt text-info"></i>
+                        </div>
+                        <div class="feature-content">
+                          <h5 class="fw-semibold">Transparência</h5>
+                          <p class="text-muted">Informações confiáveis e atualizadas sobre saúde pública</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mission-section p-4 bg-light rounded-3 mb-4">
+                    <h4 class="text-primary mb-3">
+                      <i class="fas fa-bullseye me-2"></i>
+                      Nossa Missão
+                    </h4>
+                    <p class="mb-3">
+                      Com o objetivo de melhorar a comunicação e a transparência entre os serviços de saúde e a comunidade, nosso projeto oferece um recurso confiável e fácil de usar para encontrar dados importantes sobre as unidades de saúde locais.
+                    </p>
+                    <p class="mb-0">
+                      Acreditamos que o acesso à informação é fundamental para uma saúde pública de qualidade e queremos contribuir para isso através da tecnologia.
+                    </p>
+                  </div>
+
+                  <div class="impact-section">
+                    <h4 class="text-primary mb-3">
+                      <i class="fas fa-chart-line me-2"></i>
+                      Impacto Esperado
+                    </h4>
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div class="impact-item">
+                          <i class="fas fa-users text-primary me-2"></i>
+                          Facilitar o acesso da população aos serviços de saúde
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="impact-item">
+                          <i class="fas fa-clock text-success me-2"></i>
+                          Reduzir o tempo de busca por informações de saúde
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="impact-item">
+                          <i class="fas fa-handshake text-info me-2"></i>
+                          Melhorar a comunicação entre comunidade e serviços de saúde
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="info-card">
+                <div class="info-header">
+                  <i class="fas fa-graduation-cap text-success"></i>
+                  <h5>Faculdade São Lucas</h5>
+                </div>
+                <div class="info-content">
+                  <p class="mb-3">Este projeto é resultado do trabalho dedicado de estudantes comprometidos com o bem-estar da comunidade.</p>
+                  <div class="university-info">
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                      <span>Ji-Paraná, Rondônia</span>
+                    </div>
+                    <div class="d-flex align-items-center mb-2">
+                      <i class="fas fa-calendar text-primary me-2"></i>
+                      <span>Projeto 2024</span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                      <i class="fas fa-laptop-code text-primary me-2"></i>
+                      <span>Desenvolvimento Web</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="team-section py-5 bg-light">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">
+              <i class="fas fa-users text-primary me-2"></i>
+              Nossa Equipe
+            </h2>
+            <p class="lead text-muted">Estudantes dedicados ao desenvolvimento de soluções em saúde</p>
+          </div>
+          
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="team-card">
+                <div class="team-content text-center">
+                  <div class="team-icon mb-4">
+                    <i class="fas fa-users text-primary"></i>
+                  </div>
+                  <h4 class="mb-3">Estudantes de Tecnologia</h4>
+                  <p class="lead mb-4">
+                    Somos um grupo de estudantes da Faculdade São Lucas, unidos pelo objetivo comum de usar a tecnologia para melhorar o acesso aos serviços de saúde em nossa comunidade.
+                  </p>
+                  <div class="row g-3">
+                    <div class="col-md-4">
+                      <div class="skill-item">
+                        <i class="fas fa-code text-success"></i>
+                        <h6>Desenvolvimento Web</h6>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="skill-item">
+                        <i class="fas fa-mobile-alt text-info"></i>
+                        <h6>Design Responsivo</h6>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="skill-item">
+                        <i class="fas fa-database text-warning"></i>
+                        <h6>Gestão de Dados</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Acknowledgments Section -->
+      <section class="acknowledgments-section py-5" id="agradecimentos">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">
+              <i class="fas fa-heart text-danger me-2"></i>
+              Agradecimentos
+            </h2>
+            <p class="lead text-muted">Reconhecimento a todos que tornaram este projeto possível</p>
+          </div>
+          
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="acknowledgment-card h-100">
+                <div class="acknowledgment-header">
+                  <i class="fas fa-university text-primary"></i>
+                  <h4>Faculdade São Lucas</h4>
+                </div>
+                <div class="acknowledgment-body">
+                  <p>
+                    Agradecemos sinceramente à Faculdade São Lucas por proporcionar o ambiente educacional e o suporte necessário para o desenvolvimento deste projeto.
+                  </p>
+                  <ul class="acknowledgment-list">
+                    <li>Infraestrutura tecnológica</li>
+                    <li>Orientação pedagógica</li>
+                    <li>Apoio institucional</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="acknowledgment-card h-100">
+                <div class="acknowledgment-header">
+                  <i class="fas fa-chalkboard-teacher text-success"></i>
+                  <h4>Professores e Orientadores</h4>
+                </div>
+                <div class="acknowledgment-body">
+                  <p>
+                    Nosso reconhecimento especial aos professores e profissionais dedicados que orientaram nosso trabalho e nos inspiraram a criar soluções inovadoras.
+                  </p>
+                  <ul class="acknowledgment-list">
+                    <li>Orientação técnica especializada</li>
+                    <li>Suporte durante o desenvolvimento</li>
+                    <li>Inspiração para inovar</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="acknowledgment-card h-100">
+                <div class="acknowledgment-header">
+                  <i class="fas fa-hospital text-info"></i>
+                  <h4>Serviços de Saúde</h4>
+                </div>
+                <div class="acknowledgment-body">
+                  <p>
+                    Agradecemos aos profissionais de saúde e às instituições que disponibilizaram informações e apoiaram nossa iniciativa.
+                  </p>
+                  <ul class="acknowledgment-list">
+                    <li>Fornecimento de dados</li>
+                    <li>Validação de informações</li>
+                    <li>Apoio à iniciativa</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="acknowledgment-card h-100">
+                <div class="acknowledgment-header">
+                  <i class="fas fa-users text-warning"></i>
+                  <h4>Comunidade</h4>
+                </div>
+                <div class="acknowledgment-body">
+                  <p>
+                    À comunidade de Ji-Paraná, que é a razão de ser deste projeto e que nos motiva a continuar trabalhando por melhorias na área da saúde.
+                  </p>
+                  <ul class="acknowledgment-list">
+                    <li>Inspiração para o projeto</li>
+                    <li>Feedback valioso</li>
+                    <li>Motivação constante</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mt-5">
+            <div class="col-12">
+              <div class="final-message text-center p-5 bg-primary text-white rounded-3">
+                <h3 class="mb-3">
+                  <i class="fas fa-hands-helping me-2"></i>
+                  Obrigado!
+                </h3>
+                <p class="lead mb-0">
+                  Este projeto é nosso presente para a comunidade. Esperamos que ele contribua para melhorar o acesso aos serviços de saúde e faça a diferença na vida das pessoas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-md-start text-center">
+            <p class="mb-0">&copy; 2024 InovaMed. Todos os direitos reservados.</p>
+          </div>
+          <div class="col-md-6 text-md-end text-center">
+            <p class="mb-0">Conectando você à saúde que precisa</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Sidebar functionality
+      const sidebar = document.getElementById('sidebar');
+      const sidebarOverlay = document.getElementById('sidebarOverlay');
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const sidebarToggle = document.getElementById('sidebarToggle');
+      
+      function toggleSidebar() {
+        sidebar.classList.toggle('show');
+        sidebarOverlay.classList.toggle('show');
+        document.body.classList.toggle('sidebar-open');
+      }
+      
+      if (mobileMenuToggle) {
+        mobileMenuToggle.addEventListener('click', toggleSidebar);
+      }
+      
+      if (sidebarToggle) {
+        sidebarToggle.addEventListener('click', function() {
+          sidebar.classList.remove('show');
+          sidebarOverlay.classList.remove('show');
+          document.body.classList.remove('sidebar-open');
+        });
+      }
+      
+      if (sidebarOverlay) {
+        sidebarOverlay.addEventListener('click', function() {
+          sidebar.classList.remove('show');
+          sidebarOverlay.classList.remove('show');
+          document.body.classList.remove('sidebar-open');
+        });
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
