@@ -13,11 +13,9 @@
 </head>
 
 <body>
-  <!-- Header will be loaded here by JavaScript -->
 
-  <!-- Main Content -->
   <main class="main-content">
-    <!-- Hero Section -->
+
     <section class="hero-section">
       <div class="container">
         <div class="row align-items-center min-vh-50">
@@ -50,7 +48,6 @@
       </div>
     </section>
 
-    <!-- Stats Section -->
     <section class="stats-section py-5">
       <div class="container">
         <div class="row g-4">
@@ -94,11 +91,10 @@
       </div>
     </section>
 
-    <!-- Main Content Area -->
     <section class="content-section py-5">
       <div class="container">
         <div class="row g-4">
-          <!-- About Section -->
+
           <div class="col-lg-8">
             <div class="content-card">
               <div class="card-header">
@@ -183,7 +179,7 @@
               </div>
             </div>
           </div>
-          <!-- UBS Selector -->
+
           <div class="col-lg-4" id="ubs-selector">
             <div class="ubs-selector-card">
               <div class="card-header text-center">
@@ -193,7 +189,6 @@
                 </h3>
               </div>
               <div class="card-body">
-                <!-- Search Box -->
                 <div class="search-box mb-4">
                   <div class="input-group">
                     <span class="input-group-text">
@@ -203,7 +198,6 @@
                   </div>
                 </div>
 
-                <!-- District Tabs -->
                 <div class="district-tabs mb-4">
                   <nav>
                     <div class="nav nav-pills justify-content-center" id="district-tabs" role="tablist">
@@ -219,9 +213,8 @@
                   </nav>
                 </div>
 
-                <!-- District Content -->
                 <div class="tab-content" id="district-content">
-                  <!-- First District -->
+
                   <div class="tab-pane fade show active" id="district1" role="tabpanel">
                     <div class="ubs-list">
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
@@ -294,9 +287,6 @@
                         </div>
                       </div>
 
-                      <!-- Repeat similar structure for other UBS in District 1 -->
-
-                      <!-- UBS Dom Bosco -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS DOM BOSCO" data-content="
                         <div class='modal-content-custom'>
@@ -354,7 +344,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS KM5 -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS KM5"
                         data-content="
                         <div class='modal-content-custom'>
@@ -412,7 +401,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS São Bernardo -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS SÃO BERNARDO" data-content="
                         <div class='modal-content-custom'>
@@ -472,10 +460,9 @@
                     </div>
                   </div>
 
-                  <!-- Second District -->
                   <div class="tab-pane fade" id="district2" role="tabpanel">
                     <div class="ubs-list">
-                      <!-- UBS BNH -->
+
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal" data-title="UBS BNH"
                         data-content="
                         <div class='modal-content-custom'>
@@ -533,9 +520,6 @@
                         </div>
                       </div>
 
-                      <!-- Continue with remaining UBS... -->
-
-                      <!-- UBS Juscelino Cardoso -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS JUSCELINO CARDOSO" data-content="
                         <div class='modal-content-custom'>
@@ -593,7 +577,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS L1 Maringá -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="CENTRO DE SAÚDE L-1 MARINGÁ JI-PARANÁ" data-content="
                         <div class='modal-content-custom'>
@@ -651,7 +634,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS Nova Brasília -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS NOVA BRASÍLIA" data-content="
                         <div class='modal-content-custom'>
@@ -709,7 +691,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS Primavera -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS PRIMAVERA" data-content="
                         <div class='modal-content-custom'>
@@ -767,7 +748,6 @@
                         </div>
                       </div>
 
-                      <!-- UBS São Francisco -->
                       <div class="ubs-item" data-bs-toggle="modal" data-bs-target="#infoModal"
                         data-title="UBS SÃO FRANCISCO" data-content="
                         <div class='modal-content-custom'>
@@ -835,7 +815,6 @@
     </section>
   </main>
 
-  <!-- Modal -->
   <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
       <div class="modal-content">
@@ -857,28 +836,11 @@
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-md-start text-center">
-          <p class="mb-0">&copy; 2024 InovaMed. Todos os direitos reservados.</p>
-        </div>
-        <div class="col-md-6 text-md-end text-center">
-          <p class="mb-0">Conectando você à saúde que precisa</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="components/header.js"></script>
-  <script src="components/footer.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="components/header.js"></script>
   <script src="components/footer.js"></script>
   <script>
-    // Modal functionality
+
     const infoModal = document.getElementById("infoModal");
     if (infoModal) {
       infoModal.addEventListener("show.bs.modal", function (event) {
@@ -893,13 +855,11 @@
       });
     }
 
-    // Sidebar functionality
     const sidebar = document.getElementById('sidebar');
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const sidebarToggle = document.getElementById('sidebarToggle');
     const sidebarOverlay = document.getElementById('sidebarOverlay');
 
-    // Toggle sidebar on mobile
     if (mobileMenuToggle) {
       mobileMenuToggle.addEventListener('click', function () {
         sidebar.classList.add('show');
@@ -907,7 +867,6 @@
       });
     }
 
-    // Close sidebar on mobile
     if (sidebarToggle) {
       sidebarToggle.addEventListener('click', function () {
         sidebar.classList.remove('show');
@@ -915,7 +874,6 @@
       });
     }
 
-    // Close sidebar when clicking overlay
     if (sidebarOverlay) {
       sidebarOverlay.addEventListener('click', function () {
         sidebar.classList.remove('show');
@@ -923,13 +881,11 @@
       });
     }
 
-    // UBS Search functionality with smart district switching
     const ubsSearch = document.getElementById('ubsSearch');
     if (ubsSearch) {
       ubsSearch.addEventListener('input', function () {
         const searchTerm = this.value.toLowerCase().trim();
 
-        // Get all UBS items from both districts
         const allUbsItems = document.querySelectorAll('.ubs-item');
         const district1Tab = document.getElementById('district1-tab');
         const district2Tab = document.getElementById('district2-tab');
@@ -937,7 +893,6 @@
         const district2Content = document.getElementById('district2');
 
         if (searchTerm === '') {
-          // Show all UBS when search is empty
           allUbsItems.forEach(item => {
             item.style.display = 'flex';
           });
@@ -948,7 +903,6 @@
         let foundInDistrict2 = false;
         let firstMatch = null;
 
-        // Check each UBS
         allUbsItems.forEach(item => {
           const ubsName = item.querySelector('.ubs-name');
           const isDistrict1 = item.closest('#district1') !== null;
@@ -962,7 +916,6 @@
               foundInDistrict2 = true;
             }
 
-            // Store first match for auto-switching
             if (!firstMatch) {
               firstMatch = { item, isDistrict1 };
             }
@@ -971,23 +924,18 @@
           }
         });
 
-        // Auto-switch to the district with matches
         if (firstMatch) {
           if (firstMatch.isDistrict1 && !district1Tab.classList.contains('active')) {
-            // Switch to District 1
             district1Tab.click();
           } else if (!firstMatch.isDistrict1 && !district2Tab.classList.contains('active')) {
-            // Switch to District 2
             district2Tab.click();
           }
         }
       });
 
-      // Clear search when switching tabs manually
       const districtTabs = document.querySelectorAll('#district-tabs button');
       districtTabs.forEach(tab => {
         tab.addEventListener('click', function () {
-          // Small delay to ensure tab switch completes
           setTimeout(() => {
             if (ubsSearch.value.trim() === '') {
               const allUbsItems = document.querySelectorAll('.ubs-item');
@@ -1000,7 +948,6 @@
       });
     }
 
-    // Encontrar UBS button functionality
     const encontrarUbsBtn = document.getElementById('encontrarUbsBtn');
     if (encontrarUbsBtn) {
       encontrarUbsBtn.addEventListener('click', function () {
@@ -1011,7 +958,6 @@
             block: 'start'
           });
 
-          // Opcional: focar no campo de busca após o scroll
           setTimeout(() => {
             const searchInput = document.getElementById('ubsSearch');
             if (searchInput) {
@@ -1022,7 +968,6 @@
       });
     }
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -1036,7 +981,6 @@
       });
     });
 
-    // Add active class to navigation based on scroll position
     window.addEventListener('scroll', function () {
       const sections = document.querySelectorAll('section[id]');
       const navLinks = document.querySelectorAll('.sidebar .nav-link');
@@ -1058,7 +1002,6 @@
       });
     });
 
-    // Initialize tooltips if needed
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl);

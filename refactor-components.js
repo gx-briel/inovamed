@@ -19,7 +19,7 @@ function removeHeaderSection(content) {
     const overlayEnd = content.indexOf('</div>', content.indexOf('mobile-overlay')) + 6;
 
     if (sidebarStart !== -1 && overlayEnd !== -1) {
-        return content.substring(0, sidebarStart) + '  <!-- Header will be loaded here by JavaScript -->\n\n' + content.substring(overlayEnd);
+        return content.substring(0, sidebarStart) + '\n\n' + content.substring(overlayEnd);
     }
 
     return content;

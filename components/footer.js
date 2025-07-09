@@ -1,4 +1,3 @@
-// Footer Component for InovaMed
 function createFooter() {
   return `
     <!-- Footer -->
@@ -17,9 +16,7 @@ function createFooter() {
   `;
 }
 
-// Function to load footer component
 function loadFooter() {
-  // Create a container for the footer if it doesn't exist
   let footerContainer = document.getElementById('footer-container');
   if (!footerContainer) {
     footerContainer = document.createElement('div');
@@ -27,11 +24,16 @@ function loadFooter() {
     document.body.appendChild(footerContainer);
   }
 
-  // Insert footer HTML
   footerContainer.innerHTML = createFooter();
 }
-
-// Export for use in other files
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { loadFooter };
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function () {
+    loadFooter();
+  });
+} else {
+  loadFooter();
 }

@@ -1,4 +1,3 @@
-// Header Component for InovaMed
 function createHeader() {
   return `
     <!-- Sidebar Navigation -->
@@ -71,28 +70,23 @@ function createHeader() {
   `;
 }
 
-// Function to set active navigation item
 function setActiveNavItem(currentPage) {
-  // Remove active class from all nav links
   document.querySelectorAll('.sidebar .nav-link').forEach(link => {
     link.classList.remove('active');
   });
 
-  // Add active class to current page
   const currentLink = document.querySelector(`[data-page="${currentPage}"]`);
   if (currentLink) {
     currentLink.classList.add('active');
   }
 }
 
-// Function to initialize header functionality
 function initializeHeader() {
   const sidebar = document.getElementById('sidebar');
   const mobileMenuToggle = document.getElementById('mobileMenuToggle');
   const sidebarToggle = document.getElementById('sidebarToggle');
   const sidebarOverlay = document.getElementById('sidebarOverlay');
 
-  // Toggle sidebar on mobile
   if (mobileMenuToggle) {
     mobileMenuToggle.addEventListener('click', function () {
       sidebar.classList.add('show');
@@ -100,7 +94,6 @@ function initializeHeader() {
     });
   }
 
-  // Close sidebar on mobile
   if (sidebarToggle) {
     sidebarToggle.addEventListener('click', function () {
       sidebar.classList.remove('show');
@@ -108,7 +101,6 @@ function initializeHeader() {
     });
   }
 
-  // Close sidebar when clicking overlay
   if (sidebarOverlay) {
     sidebarOverlay.addEventListener('click', function () {
       sidebar.classList.remove('show');
@@ -116,7 +108,6 @@ function initializeHeader() {
     });
   }
 
-  // Smooth scrolling for navigation links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -130,7 +121,6 @@ function initializeHeader() {
     });
   });
 
-  // Add active class to navigation based on scroll position
   window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.sidebar .nav-link');
@@ -153,7 +143,6 @@ function initializeHeader() {
   });
 }
 
-// Function to load header component
 function loadHeader(currentPage = '') {
   // Create a container for the header if it doesn't exist
   let headerContainer = document.getElementById('header-container');
@@ -163,19 +152,23 @@ function loadHeader(currentPage = '') {
     document.body.insertBefore(headerContainer, document.body.firstChild);
   }
 
-  // Insert header HTML
   headerContainer.innerHTML = createHeader();
 
-  // Set active navigation item
   if (currentPage) {
     setActiveNavItem(currentPage);
   }
 
-  // Initialize header functionality
   initializeHeader();
 }
 
-// Export for use in other files
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = { loadHeader, setActiveNavItem };
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function () {
+    loadHeader();
+  });
+} else {
+  loadHeader();
 }
